@@ -1,0 +1,51 @@
+/* drop-down profile */
+.namepro{
+    display: flex;
+    justify-content: center;
+}
+.namepro p {
+    color: black;
+}
+.logpro{
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.action {
+    position: fixed;
+    top: 120px;
+    right: 350px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+.action .profile {
+    border-radius: 30%;
+    width: 190px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.action .menu.active{
+    visibility: visible;
+
+}
+.action .menu {
+    position: absolute;
+    top: 30px;
+    right: 50;
+    padding: 10px 10px;
+    background-color: #b3df4d ;
+    border-radius: 5%;
+}
+.action .menu::before{
+    content: '';
+    position: absolute;
+    top:-7px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #b3df4d;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,243 @@
+.PetRegis{
+    background-image: url('../images/slider2.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+    width : 100% ;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.Petform{
+    margin-top: 40px;
+}
+
+.PetTop p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 60px;
+    width: 100%;
+    height: 200px;
+    color: rgba(0, 0, 0, 0.518);
+}
+
+
+
+
+
+.Petline1 {
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: center;
+    padding-right: 355px;
+    margin-top: 60px;
+}
+.Petname{
+    margin-right: 80px;
+}
+.Petname p{
+    font-size: 25px;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}
+.Petname input{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 474px;
+}
+
+.Petsex p{
+    font-size: 25px;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}
+.Petsex select{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 190px;
+    height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Petline2{
+    display: flex;
+    justify-content: center;
+    padding-right: 70px;
+    margin-top: 60px;
+}
+.TypePet{
+    margin-right: 80px;
+}
+.TypePet p{
+    font-size: 25px;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}
+.TypePet input{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 474px;
+}
+.Infor p{
+    font-size: 25px;
+    font-family: 'Poppins';
+    margin-bottom: 20px;
+}
+.Infor input{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 474px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Button {
+    display: flex;
+    margin-left:950px;
+    margin-top: 148px;
+    height: 250px;
+    
+}
+.MarginSubmit:hover {
+    background-color: #4267b2;
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+.MarginClear:hover {
+    background-color: #4267b2;
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+.MarginSubmit{
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #A5C422;
+    border: none;
+}
+.MarginClear{
+    margin-right: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #A5C422;
+    border: none;
+}
+
+.box-alert{
+    display: flex;
+    justify-content: center;
+
+}
+.alert-danger{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    border: red solid 1px;
+    border-radius: 20px;
+}
+.alert-success{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    border: rgb(38, 131, 1) solid 1px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* drop-down profile */
+.namepro{
+    display: flex;
+    justify-content: center;
+  }
+  .namepro p {
+    color: black;
+  }
+  .logpro{
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+  }
+  
+  .action {
+    position: fixed;
+    top: 120px;
+    right: 350px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
+  .action .profile {
+    border-radius: 30%;
+    width: 190px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .action .menu.active{
+    visibility: visible;
+  
+  }
+  .action .menu {
+    position: absolute;
+    top: 30px;
+    right: 50;
+    padding: 10px 10px;
+    background-color: #b3df4d ;
+    border-radius: 5%;
+  }
+  .action .menu::before{
+    content: '';
+    position: absolute;
+    top:-7px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #b3df4d;
+    transform: rotate(45deg);
+  }
