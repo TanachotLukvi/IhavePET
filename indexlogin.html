@@ -1,0 +1,122 @@
+
+
+<head>
+	<title>IhavePET</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body >
+
+	<div class="limiter" style = "height:100%; background-color: white;">
+		<div style="display :flex; height: 100%;">
+			<div style="width: 45%; background-color: white;" >
+				<div class="p-t-15"style="text-align: center;" >
+					<img src="images/IhavePET_logo.jpg" style = "width: 500px; padding: 20px;">
+				</div>
+				<div class="container-login100" style="min-height : 650px">
+					<div class="wrap-login-JAI" >
+						<form class="login100-form validate-form p-l-35 p-r-35 p-t-160" style ="height: 500px;">
+							<div class="login-title">
+								<span class="login100-form-title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+									SIGN IN
+								</span>
+							</div>
+
+							<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+								<input class="input100" id="name" type="text" name="username" placeholder="ชื่อผู้ใช้งาน">
+								<span class="focus-input100"></span>
+							</div>
+
+							<div class="wrap-input100 validate-input m-b-50" data-validate="Please enter password">
+								<input class="input100" id="pass" type="password" name="pass" placeholder="รหัสผ่าน">
+								<span class="focus-input100"></span>
+							</div>
+
+							<script>
+								function login() {
+									const Id = document.getElementById('name').value;
+									const pass = document.getElementById('pass').value;
+									if (Id === 'test123' && pass === '1234') {
+										window.location.href = 'index.html'
+									}
+									else {
+										alert("Username and password incorrect")
+									}
+									return false;
+								}
+							</script>
+							<div class="container-login100-form-btn">
+								<button type="button" class="login100-form-btn" onclick="login()">
+									เข้าสู่ระบบ
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div  style="width: 55%; padding: 20px; background: linear-gradient(45deg , rgb(0, 229, 255) 0% , rgb(56, 212, 163) 35% , rgb(196, 249, 99) 100%);"  >
+
+				<div style="text-align: right; padding-bottom: 20px;" >
+					<img src="images/news-image3.jpg" style = "height: 240px ; border :10px outset rgba(0, 247, 255, 0.552);">
+				</div>
+
+				<div style="text-align: left; padding-bottom: 20px;" >
+					<img src="images/news-image1.jpg" style = "height: 240px ; border :10px outset rgb(0, 221, 255);">
+				</div>
+
+				<div style="text-align: right; padding-bottom: 10px;" >
+					<img src="images/news-image2.jpg" style = "height: 240px ; border :10px outset rgba(77, 255, 0, 0.499);">
+				</div>
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
