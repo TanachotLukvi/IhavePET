@@ -128,7 +128,7 @@ $Med_name = mysqli_query($conn, $sql_med);
 
 
      <!-- Pet Information -->
-     <form action="insert_Info.php" method="POST">
+     <form action="check_Ownerid.php" method="POST">
           <div class="bg-blur"></div>
           <div class="pet-detail">
                <div>
@@ -163,140 +163,9 @@ $Med_name = mysqli_query($conn, $sql_med);
                                    <input type="text" name="detail-owner-id" placeholder="เลขบัตรประชาชน">
                               </div>
 
-                              <div class="detail-petdoc">
-                                   <div class="detail-petleft">
-                                        <div>
-                                             <p class="detail-pet-id">Pet ID</p>
-                                        </div>
-                                        <div>
-                                             <input type="text" name="detail-pet-id" placeholder="เลขประจำตัวสัตว์เลี้ยง">
-                                        </div>
-                                   </div>
-                                   <div class="detail-petright">
-                                        <div>
-                                             <div>
-                                                  <p class="detail-pet-id">Doctor ID</p>
-                                                  
-                                             </div>
-                                             <div>
-                                                  <input type="text" name="doctor-id" placeholder="เลขประจำตัวแพทย์">
-                                             </div>
-                                        </div>
-
-                                   </div>
-                              </div>
-
-                              <div>
-                                   <p class="detail-dis">Disease Detail</p>
-                              </div>
-                              <div class="input-detail">
-                                   <input type="text" name="detail-pet-dis" placeholder="รายละเอียดการรักษา ( ผลการตรวจ )">
-                              </div>
-                         </div>
-                         <div class="detail-right">
-                              <div>
-                                   <p class="drug">Drug</p>
-                              </div>
-                              <div>
-                                   <ol>
-                                        <div class="drug1">
-                                             <li>
-                                                  <select name="drug1" id="drug1">
-                                                       <option value="" selected>ระบุยาที่ 1</option>
-                                                       <?php $sql_med = "SELECT * from Medicine";
-                                                       $Med_name = mysqli_query($conn, $sql_med);
-                                                       while ($row = mysqli_fetch_assoc($Med_name)) { ?>
-                                                            <option value="<?php echo $row["Med_Id"] ?>">
-                                                                 <?php echo $row["Med_name"] ?>
-                                                            </option>
-                                                       <?php } ?>
-                                                  </select>
-                                             </li>
-                                        </div>
-
-                                        <div class="drug2">
-                                             <li>
-                                                  <select name="drug2" id="drug2">
-                                                       <option value="" selected>ระบุยาที่ 2</option>
-                                                       <?php $sql_med = "SELECT * from Medicine";
-                                                       $Med_name = mysqli_query($conn, $sql_med);
-                                                       while ($row = mysqli_fetch_assoc($Med_name)) { ?>
-                                                            <option value="<?php echo $row["Med_Id"] ?>">
-                                                                 <?php echo $row["Med_name"] ?>
-                                                            </option>
-                                                       <?php } ?>
-                                                  </select>
-                                             </li>
-                                        </div>
-
-                                        <div class="drug3">
-                                             <li>
-                                                  <select name="drug3" id="drug3">
-                                                       <option value="" selected>ระบุยาที่ 3</option>
-                                                       <?php $sql_med = "SELECT * from Medicine";
-                                                       $Med_name = mysqli_query($conn, $sql_med);
-                                                       while ($row = mysqli_fetch_assoc($Med_name)) { ?>
-                                                            <option value="<?php echo $row["Med_Id"] ?>">
-                                                                 <?php echo $row["Med_name"] ?>
-                                                            </option>
-                                                       <?php } ?>
-                                                  </select>
-                                             </li>
-                                        </div>
-
-                                        <div class="drug4">
-                                             <li>
-                                                  <select name="drug4" id="drug4">
-                                                       <option value="" selected>ระบุยาที่ 4</option>
-                                                       <?php $sql_med = "SELECT * from Medicine";
-                                                       $Med_name = mysqli_query($conn, $sql_med);
-                                                       while ($row = mysqli_fetch_assoc($Med_name)) { ?>
-                                                            <option value="<?php echo $row["Med_Id"] ?>">
-                                                                 <?php echo $row["Med_name"] ?>
-                                                            </option>
-                                                       <?php } ?>
-                                                  </select>
-                                             </li>
-                                        </div>
-
-                                        <div class="drug5">
-                                             <li>
-                                                  <select name="drug5" id="drug5">
-                                                       <option value="" selected>ระบุยาที่ 5</option>
-                                                       <?php $sql_med = "SELECT * from Medicine";
-                                                       $Med_name = mysqli_query($conn, $sql_med);
-                                                       while ($row = mysqli_fetch_assoc($Med_name)) { ?>
-                                                            <option value="<?php echo $row["Med_Id"] ?>">
-                                                                 <?php echo $row["Med_name"] ?>
-                                                            </option>
-                                                       <?php } ?>
-                                                  </select>
-                                             </li>
-                                        </div>
-                                   </ol>
-                              </div>
-                         </div>
-                         <div class="detail-num">
-                              <div class="detail-num-top">
-                                   <p>Amount</p>
-                              </div>
-                              <div class="drugn1">
-                                   <input type="number" name="drug1num" id="">
-                              </div>
-                              <div class="drugn2">
-                                   <input type="number" name="drug2num" id="">
-                              </div>
-                              <div class="drugn3">
-                                   <input type="number" name="drug3num" id="">
-                              </div>
-                              <div class="drugn4">
-                                   <input type="number" name="drug4num" id="">
-                              </div>
-                              <div class="drugn5">
-                                   <input type="number" name="drug5num" id="">
-                              </div>
 
                          </div>
+
                     </div>
                </div>
                <div class="Button">
